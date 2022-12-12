@@ -1,4 +1,7 @@
 import Navbar from './scenes/Navbar.jsx'
+import DotGroup from "./scenes/DotGroup.jsx"
+import Landing from "./scenes/Landing.jsx"
+
 import { useState ,useEffect } from 'react';
 import useMediaQuery from './hooks/useMediaQuery';
 
@@ -24,6 +27,19 @@ function App() {
           selectedPage = {selectedPage}
           setSelectedPage = {setSelectedPage}
         />
+
+        <div className='w-5/6 mx-auto md:h-full'>
+          {isAboveMediumeScreens && (
+            <DotGroup
+              selectedPage = {selectedPage}
+              setSelectedPage = {setSelectedPage}
+            />
+          )}
+            <Landing
+              setSelectedPage = {setSelectedPage}
+
+            />
+        </div>
     </div>
   );
 }
