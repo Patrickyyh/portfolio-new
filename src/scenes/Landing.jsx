@@ -1,4 +1,4 @@
-import SocialMediaIcons from "../scenes/SocialMediaIcons.jsx"
+import SocialMediaIcons from "../components/SocialMediaIcons.jsx"
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
@@ -20,11 +20,9 @@ const Landing  = ({setSelectedPage}) => {
                         before:border-2 before:border-blue before:z-[-1]
                     "
                   >
-                    <img
-                        alt = "profile"
+                    <img alt = "profile"
                         className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                                   max-w-[400px] md:max-w-[600px]
-                        "
+                                   max-w-[400px] md:max-w-[600px]"
                         src = "assets/profile-image.png"
                     />
 
@@ -33,8 +31,7 @@ const Landing  = ({setSelectedPage}) => {
             :( <img
                 alt = "profile"
                 className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full
-                           max-w-[400px] md:max-w-[600px]
-                "
+                           max-w-[400px] md:max-w-[600px]"
                 src = "assets/profile-image.png"
             />
             )}
